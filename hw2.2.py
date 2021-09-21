@@ -20,3 +20,5 @@ df = df.dropna()
 df.shape
 python_data = df[df['Язык.программирования'] == 'Python']
 python_data.shape
+grouped = python_data.groupby(by='Должность').head(207)
+print(grouped)
